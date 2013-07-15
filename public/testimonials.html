@@ -1,0 +1,316 @@
+<!DOCTYPE html SYSTEM "http://www.indonez.com/xhtml1-iframe.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Helios - Minimalist Business Template 7</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="helios-icon" href="/helios-icon.png" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="public/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/style.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/custom-style.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="public/stylesheets/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="public/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="public/javascripts/dropdown.js"></script>
+<script type="text/javascript" src="public/javascripts/vtip.js"></script>
+<script type="text/javascript" src="public/javascripts/jquery.colorbox.js"></script>
+<script type="text/javascript" src="public/javascripts/ddaccordion.js"></script>
+<script type="text/javascript" src="public/javascripts/faq-functions.js" ></script>
+<script type="text/javascript">
+   $(function(){		
+	//Colorbox Setting
+	$("a[rel='portfolio']").colorbox({transition:"fade"});
+	
+	//Tab Jquery
+	$(".tab_content").hide(); 
+	$("ul.tabs li:first").addClass("active").show(); 
+	$(".tab_content:first").show(); 
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active");
+		$(this).addClass("active"); 
+		$(".tab_content").hide(); 
+		var activeTab = $(this).find("a").attr("href"); 
+		$(activeTab).fadeIn(); 
+		return false;
+	});
+});		
+</script>
+
+</head>
+
+<body>	
+	<div id="container"> 
+    	<div id="top-container">
+        
+        	<!-- BEGIN OF HEADER -->
+            <div id="header-container">
+            	<div id="header-box">
+                
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Helios Logo" /></a>
+                    </div>
+                    <div id="righttop-header">
+                        <div id="top-social">
+                            <ul>
+                                <li><a href="#"><img src="images/social-icons/top-social/social1.png" alt="" /></a></li>
+                                <li><a href="#"><img src="images/social-icons/top-social/social2.png" alt="" /></a></li>
+                                <li><a href="#"><img src="images/social-icons/top-social/social3.png" alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <div id="top-slogan">
+                            <h4>Welcome to <span class="title-black">HELIOS</span>, you're on the right place to find <br/> many creative solution, because we're is factory of idea</h4>
+                        </div>
+                        <div id="mainmenu">
+                            <ul id="menu">
+                                <li><a href="index.html">home</a>
+                                    <ul> 
+                                        <li><a href="index-2.html">home roundabout</a></li>                           
+                                        <li><a href="index-3.html">home diapo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">about</a>
+                                    <ul> 
+                                        <li><a href="about-layout1.html">about layout 1</a></li>
+                                        <li><a href="about-layout2.html">about layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">services</a>
+                                    <ul> 
+                                        <li><a href="services-layout1.html">services layout 1</a></li>
+                                        <li><a href="services-layout2.html">services layout 2</a></li>
+                                        <li><a href="services-layout3.html">services layout 3</a></li>
+                                    </ul> 	
+                                </li>
+                                <li><a href="#">portfolio</a>
+                                    <ul> 
+                                        <li><a href="portfolio-layout1.html">portfolio layout 1</a></li>
+                                        <li><a href="portfolio-layout2.html">portfolio layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">blog</a>
+                                    <ul> 
+                                        <li><a href="blog-layout1-r.html">blog layout 1</a></li>
+                                        <li><a href="blog-layout2.html">blog layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">contact</a>
+                                    <ul> 
+                                        <li><a href="contact-layout1.html">contact layout 1</a></li>
+                                        <li><a href="contact-layout2.html">contact layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current"><a href="#">pages</a>
+                                    <ul>                        
+                                        <li><a href="blog-layout1-r.html">Right sidebar page</a></li>
+                                        <li><a href="blog-layout1-l.html">Left sidebar page</a></li>
+                                        <li><a href="column.html">Column page</a></li>
+                                        <li><a href="tables.html">Tables page</a></li>
+                                        <li><a href="button-list.html">Button &amp; List page</a></li>
+                                        <li><a href="typography.html">Typography page</a></li>
+                                        <li><a href="testimonials.html">Testimonials page</a></li>
+                                        <li><a href="pricing.html">Pricing plan</a></li>
+                                        <li><a href="faq.html">FAQ page</a></li>
+                                        <li><a href="single-layout1.html">Single page</a></li>                            
+                                        <li><a href="fullwidth.html">Fullwidth page</a></li>
+                                        <li><a href="404.html">404 page</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>        
+        	<!-- END OF HEADER -->
+            
+            <!-- BEGIN OF PAGE TITLE -->
+            <div id="page-title">
+            	<h1>Testimonials</h1>
+                <h6>Some attractive desciption here</h6>	
+            </div>
+            <!-- END OF PAGE TITLE -->
+            
+            <!-- BEGIN OF CONTENT -->
+            <div id="content">
+            	<div class="maincontent">
+                
+                	<div class="col-2-2">
+                    	
+                        <!-- begin of testimonials 1 -->
+                        <div class="testi-container">
+                        	<div class="testi-people-left">
+                            	<div class="testi-baloon-left"></div>
+                            	<img src="images/testi-people1.jpg" alt="" class="imgborder2" />
+                                <p class="p-name"><strong>Christina Yoda</strong></p>
+                                <p class="p-company">Red Arrow Ltd</p>                            	
+                            </div>
+                            <div class="testi-content">
+                                <blockquote>
+                                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beataeuis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur velillum dolorem fugiat maxime place facere possimus</p>
+                                </blockquote>                                 
+                            </div>                                                       
+                        </div>                        
+                        <!-- end of testimonials 1 -->
+                        
+                        <!-- begin of testimonials 2 -->
+                        <div class="testi-container">                        	
+                            <div class="testi-content">
+                                <blockquote>
+                                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beataeuis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur velillum dolorem fugiat maxime place facere possimus</p>
+                                </blockquote>                                 
+                            </div>
+                            <div class="testi-people-right">
+                            	<div class="testi-baloon-right"></div>
+                            	<img src="images/testi-people2.jpg" alt="" class="imgborder2" />
+                                <p class="p-name"><strong>Thania Shapa</strong></p>
+                                <p class="p-company">Lj Hocker Ltd</p>                            	
+                            </div>                                                       
+                        </div>                        
+                        <!-- end of testimonials 2 -->
+                        
+                        <!-- begin of testimonials 3 -->
+                        <div class="testi-container">
+                        	<div class="testi-people-left">
+                            	<div class="testi-baloon-left"></div>
+                            	<img src="images/testi-people3.jpg" alt="" class="imgborder2" />
+                                <p class="p-name"><strong>Anthony West</strong></p>
+                                <p class="p-company">Fast Moving Ltd</p>                            	
+                            </div>
+                            <div class="testi-content">
+                                <blockquote>
+                                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beataeuis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur velillum dolorem fugiat maxime place facere possimus</p>
+                                </blockquote>                                 
+                            </div>                                                       
+                        </div>                        
+                        <!-- end of testimonials 3 -->
+                        
+                        <!-- begin of testimonials 4 -->
+                        <div class="testi-container">                        	
+                            <div class="testi-content">
+                                <blockquote>
+                                    <p>Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beataeuis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur velillum dolorem fugiat maxime place facere possimus</p>
+                                </blockquote>                                 
+                            </div>
+                            <div class="testi-people-right">
+                            	<div class="testi-baloon-right"></div>
+                            	<img src="images/testi-people4.jpg" alt="" class="imgborder2" />
+                                <p class="p-name"><strong>Stephanie Gloria</strong></p>
+                                <p class="p-company">Newalker Group Ltd</p>                            	
+                            </div>                                                       
+                        </div>                        
+                        <!-- end of testimonials 4 -->                                 
+                        
+                    </div>
+                    
+                    <!-- BEGIN OF SIDEBAR -->
+                    <div class="col-3 sidebar">
+                    	<div class="sidebar-content">
+                        <h5>More about us</h5>
+                        	<ul class="sidebar-list">
+                            	<li><a href="#">Vision and Mission</a></li>                    
+                                <li><a href="#">Company History</a></li>                                
+                                <li><a href="#">Company Philosophy</a></li>
+                                <li><a href="#">Our Partnership</a></li>
+                                <li><a href="#">Carreer</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-content">
+                        <h5>Our advantage</h5>
+                        	<ul class="advantage-list">
+                            	<li>
+                                	<img src="images/advantage1.jpg" alt="" />
+                                	<p><strong>#1 Customer Satisfaction</strong> <br/> Ut enim ad minim veniam quis nostrud ullamco laboris nisi ut</p>
+                                </li>
+                                <li>
+                                	<img src="images/advantage2.jpg" alt="" />
+                                	<p><strong>Project  Finished on Time</strong> <br/> Ut enim ad minim veniam quis nostrud ullamco laboris nisi ut</p>
+                                </li>
+                                <li>
+                                	<img src="images/advantage3.jpg" alt="" />
+                                	<p><strong>Brilliant  Ideas Factory</strong> <br/> Ut enim ad minim veniam quis nostrud ullamco laboris nisi ut</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END OF SIDEBAR -->             
+                
+                </div>
+            </div>            
+            <!-- END OF CONTENT -->
+            
+        </div>
+        
+        <!-- BEGIN OF BOTTOM CONTENT -->
+        <div id="bottom-container">
+        	<div id="bottom-content">
+           	
+            	<div id="client-logo">
+                	<ul>
+                    	<li><img src="images/client1.gif" alt="" /></li>
+                        <li><img src="images/client2.gif" alt="" /></li>
+                        <li><img src="images/client3.gif" alt="" /></li>
+                        <li><img src="images/client4.gif" alt="" /></li>
+                        <li><img src="images/client5.gif" alt="" /></li>
+                        <li><img src="images/client6.gif" alt="" /></li>
+                    </ul>
+                </div>
+                <div class="bottom-column1">
+                	<h5>About HELIOS</h5>
+                    <p>Nunc hendrerit libero scelerisque pellentesque praesent posuere digsim ipsum vulputate donec anulla cum sociis natoqu penatibus emagnis voluptatem quia volu eptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p>Montes nascetur ridiculus mus mauris sedapien ac nunc facilisis bibendum eu quis orci etiam mollis velit et magna dapibus scelerisqueq</p>
+                </div>
+                <div class="bottom-column2">
+                	<h5>Trading Terms</h5>
+                    <p>Read our easy to understand Trading Terms so you know how we do business and what we expect from our clients.</p>
+                    <p><a href="#">Privacy Policy &amp; Disclaimer</a></p>
+                </div>
+                <div class="bottom-column2">
+                	<h4>1600 086 688 <br/> 1600 086 677</h4>
+                    <p><a href="mailto:info@indonez.com">info@helios.com</a></p>
+                    <p>PO BOX 1234,<br/>Jakarta, JKT 1220</p>
+                </div>                 
+                
+            </div>
+            <div id="footer-wrapper">
+            	<div id="footer-content">
+                	<div class="footer-logo">
+                    	<img src="images/footer-logo.png" alt="" />
+                    </div>
+                    <div class="footer-text">
+                    	<p>© 2011 HELIOS. Developed by Indonez Techno Pratama. <br/> Lorem Ipsum dorem nulla sed eget augue maurisvestibulum dolor etiam ut posuere dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF BOTTOM CONTENT -->
+    
+    <div class="clear"></div>                              	       
+    </div>      
+<script type="text/javascript">$('#noscript').remove();</script>     
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37519169-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

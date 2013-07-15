@@ -1,0 +1,360 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <body onLoad="MM_preloadImages('/assets/static/graphics/logo_pogo.png','/assets/client3_on.gif','/assets/client1_on.gif','/assets/client2_on.gif','/assets/client4_on.gif','/assets/footer-logo_on.png')" >
+    <div class="client_dashboard_box">
+      <h2 class="red_color">Client dashboard</h2>
+      <%= nested_form_for(@client, :url => "/create_client") do |f|%>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+        <div>
+          <% if @client.errors.any? %>
+            <div id="error_explanation" class="red_color">
+              <h2 class="red_color"><%= pluralize(@client.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+              <ul>
+                <% @client.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="float_left">
+            HSS Partner <br/>
+            <%= f.text_field :hss_partner , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Client Name <br/>
+            <%= f.text_field :client_name , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Street Address <br/>
+            <%= f.text_field :street_address1 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Street Address 2 <br/>
+            <%= f.text_field :street_address2 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            City <br/>
+            <%= f.text_field :city , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Province <br/>
+            <%= f.text_field :province , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Zip Code <br/>
+            <%= f.text_field :zip_code , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Contact Name<br/>
+            <%= f.text_field :contact , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Contact Phone <br/>
+            <%= f.text_field :contact_phone , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Contact Email<br/>
+            <%= f.email_field :contact_email , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity <br/>
+            <%= f.text_field :covered_entity , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity Address <br/>
+            <%= f.text_field :covered_entity_address1 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity Address 2 <br/>
+            <%= f.text_field :covered_entity_address2 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity City <br/>
+            <%= f.text_field :covered_entity_city , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity State <br/>
+            <%= f.text_field :covered_entity_state , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Covered Entity Zip Code <br/>
+            <%= f.text_field :covered_entity_zip_code , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Information security officer <br/>
+            <%= f.text_field :info_security_officer , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            ISO Title <br/>
+            <%= f.text_field :iso_title , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            ISO Email <br/>
+            <%= f.email_field :iso_email , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            ISO Telephone <br/>
+            <%= f.text_field :iso_telephone , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            IT Network Name <br/>
+            <%= f.text_field :i_t_network_name , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Risk assessment report date <br/>
+            <%= f.text_field :risk_assessment_report_date , :class => "big_text_field", :id => "defaultPopup"%>
+          </div>
+          <div class="float_left">
+            Unique Project Identifier (UPI) <br/>
+            <%= f.text_field :unique_project_identifier , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Type of IT system <br/>
+            <%= f.text_field :type_of_i_t_system , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            System Categorization <br/>
+            <%= f.text_field :system_categorization , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            System Status <br/>
+            <%= f.text_field :system_status , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            System Configuration <br/>
+            <%= f.text_field :system_configuration , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Database <br/>
+            <%= f.text_field :database , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network Server OS <br/>
+            <%= f.text_field :network_server_o_s , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            How many Servers <br/>
+            <%= f.text_field :total_servers , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            How many workstations <br/>
+            <%= f.text_field :total_workstations , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            How many laptops/tablets <br/>
+            <%= f.text_field :total_laptops , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            How many BYODs do you have <br/>
+            <%= f.text_field :total_byods , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            What operating systems are in use <br/>
+            <%= f.text_field :in_use_operating_system , :class => "big_text_field"%>
+          </div>
+          <div class="float_left" style="width:46.5%">
+            Do you use Email? <br/>
+            <%= f.check_box :use_email_or_not %>
+          </div>
+          <div class="float_left">
+            What Product(s) do you use? <br/>
+            <%= f.text_field :in_use_products , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Do you have an in-house email server? <br/>
+            <%= f.text_field :in_house_email_server , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall model <br/>
+            <%= f.text_field :firewall_model , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall S/N <br/>
+            <%= f.text_field :firewall_serial_number , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall Warranty Status <br/>
+            <%= f.text_field :firewall_warranty_status , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall inbound/outbound Rule 1 <br/>
+            <%= f.text_field :firewall_in_outbound_rule1 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall inbound/outbound Rule 2 <br/>
+            <%= f.text_field :firewall_in_outbound_rule2 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Firewall inbound/outbound Rule 3 <br/>
+            <%= f.text_field :firewall_in_outbound_rule3 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Any VPN's (define) <br/>
+            <%= f.text_field :vpns , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            What is the name of EMR <br/>
+            <%= f.text_field :emr_name , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Is the EMR hosted or running in-house <br/>
+            <%= f.text_field :emr_hosted_running , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            ISP Name <br/>
+            <%= f.text_field :isp_name , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            ISP Account number  <br/>
+            <%= f.text_field :isp_acc_no , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Support Contract number <br/>
+            <%= f.text_field :support_contract_no , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Connection Type <br/>
+            <%= f.text_field :connection_type , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Static IP Info <br/>
+            <%= f.text_field :staic_ip_info , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network IP <br/>
+            <%= f.text_field :network_ip , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network subnet <br/>
+            <%= f.text_field :network_subnet , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network gateway <br/>
+            <%= f.text_field :network_gateway , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network DNS1 <br/>
+            <%= f.text_field :network_dns1 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Network DNS2 <br/>
+            <%= f.text_field :network_dns2 , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Clearing House <br/>
+            <%= f.text_field :clearinghouse , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Clearing House Contact number <br/>
+            <%= f.text_field :clearinghouse_contact_no , :class => "big_text_field"%>
+          </div>
+          <div class="float_left">
+            Clearing House Interface Connection Type <br/>
+            <%= f.text_field :clearinghouse_interface_connection_type , :class => "big_text_field"%>
+          </div>
+
+  <%#----------------------- Add more clients interface -------------------%>
+
+          <div class="float_left" style="width:100%;">
+            <br/>
+            <%= f.link_to_add "Add Client Interface", :client_interfaces, :class=> "add-client_contact" %>
+          </div>
+
+          <div class="float_left">
+            <%= f.fields_for :client_interfaces do |task_form| %>
+              <div class="float_left" style="width:100%;">
+                Interface Name <br/>
+                <%= task_form.text_field :interface_name , :class => "big_text_field"%>
+              </div>
+              <div class="float_left" style="width:100%;">
+                Contact Number <br/>
+                <%= task_form.text_field :contact_number , :class => "big_text_field"%>
+              </div>
+              <div class="float_left" style="width:100%;">
+                Interface connection type <br/>
+                <%= task_form.text_field :interface_connection_type , :class => "big_text_field"%>
+              </div>
+              <div class="float_left"  style="margin-top:-18px;width: 100%;">
+                <%= task_form.link_to_remove "Remove this Client Interface", :class=> "add-client_contact" %>
+              </div>
+            <% end %>
+          </div>
+
+  <%#----------------------- Add more client contacts -------------------%>
+
+          <div class="float_left" style="width:100%;">
+            <%= f.link_to_add "Add Client Contact", :client_contacts, :class=> "add-client_contact" %>
+          </div>
+
+          <div class="float_left">
+            <%= f.fields_for :client_contacts do |task_form| %>
+              <div class="float_left"  style="width:100%;">
+                Company <br/>
+                <%= task_form.text_field :company , :class => "big_text_field"%>
+              </div>
+              <div class="float_left"  style="width:100%;">
+                Name <br/>
+                <%= task_form.text_field :name , :class => "big_text_field"%>
+              </div>
+              <div class="float_left"  style="width:100%;">
+                Title <br/>
+                <%= task_form.text_field :title , :class => "big_text_field"%>
+              </div>
+              <div class="float_left" style="width:100%;">
+                Phone <br/>
+                <%= task_form.text_field :phone , :class => "big_text_field"%>
+              </div>
+              <div class="float_left" style="width:100%;">
+                Email <br/>
+                <%= task_form.email_field :email , :class => "big_text_field"%>
+              </div>
+              <div class="float_left" style="width:100%;">
+                Participate In <br/>
+                <%= task_form.text_field :participate_in , :class => "big_text_field"%>
+              </div>
+              <div class="float_left"  style="margin-top:-18px;width: 100%;">
+                <%= task_form.link_to_remove "Remove this Client Contact" , :class=> "add-client_contact"%>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="float_left dashboard_submit_button">
+            <br/>
+            <%if @client_updated.present?%>
+              <%= f.submit "Save To Draft", :class => "client_dashboard_button" %>
+              <%= f.submit "Send to Admin", :class => "client_dashboard_button" %>
+              <%= f.submit "Generate PDF", :class => "client_dashboard_button" %>
+            <%else%>
+              <%= f.submit "Submit", :class => "client_dashboard_button" %>
+              <%= f.submit "Send to Admin", :class => "client_dashboard_button" %>
+              <%= f.submit "Generate PDF", :class => "client_dashboard_button" %>
+            <%end%>
+          </div>
+        </div>
+      <%end%>
+    </div>
+  </body>
+</html>
+<script>
+
+  $('#defaultPopup,#defaultInline').datepick();
+
+  $('.disablePicker').toggle(function() {
+    $(this).text('Enable').siblings('.hasDatepick').
+      datepick('disable');
+  },
+  function() {
+    $(this).text('Disable').siblings('.hasDatepick').
+      datepick('enable');
+  }
+);
+
+  $('#removePicker').toggle(function() {
+    $(this).text('Re-attach');
+    $('#defaultPopup,#defaultInline').datepick('destroy');
+  },
+  function() {
+    $(this).text('Remove');
+    $('#defaultPopup,#defaultInline').datepick();
+  });
+</script>

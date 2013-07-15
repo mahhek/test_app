@@ -1,0 +1,368 @@
+<h2 style="color:#AC1927">Client Information Sheet</h2>
+<div style="margin-left:20px">
+  <h2 style="color:#AC1927">Client Information:</h2>
+  <div >
+    HSS Partner :  <%= @client.hss_partner%>
+  </div>
+  <br/>
+  <div >
+    Client Name : <%= @client.client_name%>
+  </div>
+  <br/>
+  <div >
+    Street Address : <%= @client.street_address1%>
+  </div>
+  <br/>
+  <div >
+    Street Address 2 : <%= @client.street_address2%>
+  </div>
+  <br/>
+  <div >
+    City :
+    <%= @client.city%>
+  </div>
+  <br/>
+  <div >
+    Province :
+    <%= @client.province%>
+  </div>
+  <br/>
+  <div >
+    Zip Code :
+    <%= @client.zip_code %>
+  </div>
+  <br/>
+  <div >
+    Contact :
+    <%=@client.contact %>
+  </div>
+  <br/>
+  <div >
+    Phone :
+    <%=@client.contact_phone %>
+  </div>
+  <br/>
+  <div >
+    Email :
+    <%= @client.contact_email %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity :
+    <%=@client.covered_entity %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity Address :
+    <%=@client.covered_entity_address1 %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity Address 2 :
+    <%=@client.covered_entity_address2 %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity City :
+    <%=@client.covered_entity_city %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity State :
+    <%=@client.covered_entity_state %>
+  </div>
+  <br/>
+  <div >
+    Covered Entity Zip Code :
+    <%=@client.covered_entity_zip_code %>
+  </div>
+  <br/>
+  <div >
+    Information security officer :
+    <%=@client.info_security_officer %>
+  </div>
+  <br/>
+  <div >
+    ISO Title :
+    <%=@client.iso_title %>
+  </div>
+  <br/>
+  <div >
+    ISO Email :
+    <%= @client.iso_email %>
+  </div>
+  <br/>
+  <div >
+    ISO Telephone :
+    <%= @client.iso_telephone %>
+  </div>
+  <br/>
+  <div >
+    IT Network Name :
+    <%=@client.i_t_network_name %>
+  </div>
+  <br/>
+  <div >
+    Risk assessment report date :
+    <%= @client.risk_assessment_report_date%>
+  </div>
+  <br/>
+  <div >
+    Unique Project Identifier (UPI) :
+    <%=@client.unique_project_identifier %>
+  </div>
+  <br/>
+  <div >
+    Type of IT system :
+    <%=@client.type_of_i_t_system %>
+  </div>
+  <br/>
+  <div >
+    System Categorization :
+    <%=@client.system_categorization %>
+  </div>
+  <br/>
+  <div >
+    System Status :
+    <%=@client.system_status %>
+  </div>
+  <br/>
+  <div >
+    System Configuration :
+    <%=@client.system_configuration %>
+  </div>
+  <br/>
+  <div >
+    Database :
+    <%=@client.database %>
+  </div>
+  <br/>
+  <div >
+    Network Server OS :
+    <%=@client.network_server_o_s %>
+  </div>
+  <br/>
+  <div >
+    How many Servers :
+    <%=@client.total_servers %>
+  </div>
+  <br/>
+  <div >
+    How many Workstations :
+    <%=@client.total_workstations %>
+  </div>
+  <br/>
+  <div >
+    How many laptops/tablets :
+    <%=@client.total_laptops %>
+  </div>
+  <br/>
+  <div >
+    How many BYODs do you have :
+    <%=@client.total_byods %>
+  </div>
+  <br/>
+  <div >
+    What operating systems are in use :
+    <%=@client.in_use_operating_system %>
+  </div>
+  <br/>
+
+  <h2 style="color:#AC1927">Email:</h2>
+
+  <div >
+    Do you use Email?
+    <%= @client.use_email_or_not%>
+  </div>
+  <br/>
+  <div >
+    What Product(s) do you use? :
+    <%=@client.in_use_products %>
+  </div>
+  <br/>
+  <div >
+    Do you have an in-house email server? :
+    <%=@client.in_house_email_server %>
+  </div>
+  <br/>
+
+  <h2 style="color:#AC1927">Firewall:</h2>
+
+  <div >
+    Firewall model :
+    <%=@client.firewall_model %>
+  </div>
+  <br/>
+  <div >
+    Firewall S/N :
+    <%=@client.firewall_serial_number %>
+  </div>
+  <br/>
+  <div >
+    Firewall Warranty Status :
+    <%=@client.firewall_warranty_status %>
+  </div>
+  <br/>
+  <div >
+    Firewall inbound/outbound Rule 1 :
+    <%=@client.firewall_in_outbound_rule1 %>
+  </div>
+  <br/>
+  <div >
+    Firewall inbound/outbound Rule 2 :
+    <%=@client.firewall_in_outbound_rule2 %>
+  </div>
+  <br/>
+  <div >
+    Firewall inbound/outbound Rule 3 :
+    <%=@client.firewall_in_outbound_rule3 %>
+  </div>
+  <br/>
+  <div >
+    Any VPN's (define) :
+    <%=@client.vpns %>
+  </div>
+  <br/>
+
+  <h2 style="color:#AC1927">EMR:</h2>
+
+  <div >
+    What is the name of EMR :
+    <%=@client.emr_name %>
+  </div>
+  <br/>
+  <div >
+    Is the EMR hosted or running in-house :
+    <%=@client.emr_hosted_running %>
+  </div>
+  <br/>
+
+  <div class="float_left add-client_contact" style="width:100%;color:#AC1927">
+    <br/>
+    <h2 style="color:#AC1927">Information Contacts:</h2>
+  </div>
+
+  <div  style="margin-left:20px">
+    <% @client.client_contacts.each do |client_contact| %>
+      <div >
+        Company :
+        <%= client_contact.company %>
+      </div>
+      <div >
+        Name :
+        <%= client_contact.name %>
+      </div>
+      <div >
+        Title :
+        <%= client_contact.title %>
+      </div>
+      <div >
+        Phone :
+        <%= client_contact.phone %>
+      </div>
+      <div >
+        Email :
+        <%= client_contact.email %>
+      </div>
+      <div >
+        Participate In :
+        <%= client_contact.participate_in %>
+      </div>
+      <br/>
+    <% end %>
+  </div>
+
+  <h2 style="color:#AC1927">Internet connectivity:</h2>
+
+  <div >
+    ISP Name :
+    <%=@client.isp_name %>
+  </div>
+  <br/>
+  <div >
+    ISP Account number  :
+    <%=@client.isp_acc_no %>
+  </div>
+  <br/>
+  <div >
+    Support Contract number :
+    <%=@client.support_contract_no %>
+  </div>
+  <br/>
+  <div >
+    Connection Type :
+    <%=@client.connection_type %>
+  </div>
+  <br/>
+  <div >
+    Static IP Info :
+    <%=@client.staic_ip_info %>
+  </div>
+  <br/>
+  <div >
+    Network IP :
+    <%=@client.network_ip %>
+  </div>
+  <br/>
+  <div >
+    Network subnet :
+    <%=@client.network_subnet %>
+  </div>
+  <br/>
+  <div >
+    Network gateway :
+    <%=@client.network_gateway %>
+  </div>
+  <br/>
+  <div >
+    Network DNS1 :
+    <%=@client.network_dns1 %>
+  </div>
+  <br/>
+  <div >
+    Network DNS2 :
+    <%=@client.network_dns2 %>
+  </div>
+  <br/>
+
+  <div class="float_left add-client_contact" style="width:100%;color:#AC1927">
+    <br/>
+    <h2 style="color:#AC1927">Interfaces:</h2>
+  </div>
+
+  <div  style="margin-left:20px">
+    <% @client.client_interfaces.each do |client_interface| %>
+      <div >
+        Interface Name :
+        <%= client_interface.interface_name %>
+      </div>
+      <div >
+        Contact Number :
+        <%= client_interface.contact_number %>
+      </div>
+      <div >
+        Interface connection type :
+        <%= client_interface.interface_connection_type %>
+      </div>
+      <br/>
+    <% end %>
+  </div>
+
+  <h2 style="color:#AC1927">Clearinghouse:</h2>
+
+  <div >
+    Clearing House :
+    <%=@client.clearinghouse %>
+  </div>
+  <br/>
+  <div >
+    Contact number :
+    <%=@client.clearinghouse_contact_no %>
+  </div>
+  <br/>
+  <div >
+    Interface Connection Type :
+    <%=@client.clearinghouse_interface_connection_type %>
+  </div>
+  <br/>
+</div>

@@ -1,0 +1,95 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HIPAA Security Suite - Compliance - Risk Assessment</title>
+    <meta name="description" content="Managing HIPAA Compliance can be a full time job. The HIPAA Security Suite is a complete, turn key solution providing a single dashboard to manage all of your practice's HIPAA requirements." />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //        Favicon Files         // -->
+    <!-- ////////////////////////////////// -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="helios-icon" href="/assets/helios-icon.png" />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //      Start Stylesheets       // -->
+    <!-- ////////////////////////////////// -->
+    <link href="/assets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/custom-style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+
+    <!-- ////////////////////////////////// -->
+    <!-- //      Javascript Files        // -->
+    <!-- ////////////////////////////////// -->
+    <script type="text/javascript" src="/assets/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/dropdown.js"></script>
+    <script type="text/javascript" src="/assets/vtip.js"></script>
+    <script type="text/javascript" src="/assets/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="/assets/ddaccordion.js"></script>
+    <script type="text/javascript" src="/assets/faq-functions.js" ></script>
+    <script type="text/javascript" src="/assets/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/assets/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="/assets/imgrollover.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        //Front Testimonials Setting
+        $('.front-testimonials ul').cycle({
+          timeout: 7000,
+          fx:     'blindY',
+          cleartypeNoBg: true
+        });
+
+        //Tab Jquery
+        $(".tab_content").hide();
+        $("ul.tabs li:first").addClass("active").show();
+        $(".tab_content:first").show();
+        $("ul.tabs li").click(function() {
+          $("ul.tabs li").removeClass("active");
+          $(this).addClass("active");
+          $(".tab_content").hide();
+          var activeTab = $(this).find("a").attr("href");
+          $(activeTab).fadeIn();
+          return false;
+        });
+
+        //Colorbox Setting
+        $("a[rel='portfolio']").colorbox({transition:"fade"});
+
+
+        //Slideshow Setting
+        $('#slideshow ul').cycle({
+          timeout: 5000,
+          fx:     'fade',
+          prev:   '#slideprev',
+          next:   '#slidenext',
+          pause:   0,
+          cleartypeNoBg: true,
+          pauseOnPagerHover: 0
+        });
+
+      });
+    </script>
+
+    <style type="text/css">
+      .auto-style1 {
+        width: 294px;
+        margin: 0px 0px 15px 19px;
+        float: left;
+      }
+      .auto-style2 {
+        font-size: x-small;
+        font-family: Arial;
+      }
+      .auto-style3 {
+        font-size: medium;
+      }
+    </style>
+
+  </head>
+
+  <body onLoad="MM_preloadImages('/assets/static/graphics/logo_pogo.png','/assets/client3_on.gif','/assets/client1_on.gif','/assets/client2_on.gif','/assets/client4_on.gif','/assets/footer-logo_on.png')" >
+    <div class="sign_in_box">
+      <h2>Admin dashboard</h2>
+    </div>
+  </body>
+</html>

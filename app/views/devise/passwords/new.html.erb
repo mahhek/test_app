@@ -1,0 +1,14 @@
+<div class="sign_in_box">
+  <h2 class="red_color">Forgot your password?</h2>
+
+  <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div><%= f.label :email %><br />
+      <%= f.email_field :email, :autofocus => true, :class => "big_text_field" %></div>
+    <br/>
+    <div><%= f.submit "Send me reset password instructions", :class => "button_me_long"  %></div>
+  <% end %>
+  <br/>
+  <%= render "devise/shared/links" %>
+</div>

@@ -1,0 +1,36 @@
+<div class="sign_in_box">
+
+  <h3 class="red_color">User Profile Information</h3>
+
+<div>
+  First Name : <%= @user.fname if @user.fname%>
+</div>
+<br/>
+
+<div>
+  Last Name : <%= @user.lname if @user.lname%>
+</div>
+<br/>
+
+<div>
+  Email : <%= @user.email if @user.email%>
+</div>
+<br/>
+
+<div>
+  Company : <%= @user.company if @user.company%>
+</div>
+<br/>
+
+<div>
+  Phone : <%= @user.phone if @user.phone%>
+</div>
+<br/>
+
+<div>
+  Status : <%= @user.is_active%>
+</div>
+<br/>
+
+<%= link_to "Edit Profile", edit_admin_user_path(@user) %>
+</div>

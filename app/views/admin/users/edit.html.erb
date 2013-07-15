@@ -1,0 +1,52 @@
+<div class="sign_in_box">
+  <h2 class="red_color">Edit Your Profile</h2>
+  <%= form_for [:admin,@user] do |f|%>
+    <% if @user.errors.any? %>
+      <div id="error_explanation" class="red_color">
+        <h2 class="red_color"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+      First Name : <br/>
+      <%= f.text_field :fname , :class => "big_text_field"%>
+    </div>
+    <br/>
+    <div>
+      Last Name : <br/>
+      <%= f.text_field :lname , :class => "big_text_field"%>
+    </div>
+    <br/>
+    <div>
+      Company : <br/>
+      <%= f.text_field :company , :class => "big_text_field"%>
+    </div>
+    <br/>
+    <div>
+      Phone : <br/>
+      <%= f.text_field :phone , :class => "big_text_field"%>
+    </div>
+    <br/>
+    <div>
+      Email : <br/>
+      <%= f.email_field :email, :autofocus => true , :class => "big_text_field"%>
+    </div>
+    <br/>
+    <div>
+      Password : <br/>
+      <%= f.password_field :password , :class => "big_text_field"%>
+    </div>
+
+    <%f.hidden_field :role, :value => "client"%><br/>
+
+    <div>
+      <%= f.submit "Update User" , :class => "button_me_long"%>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,951 @@
+/* Reset */
+ a.go {
+    float: right;
+    margin: 6px 0;
+    margin-right: 8px;
+    font-size: 11px;
+    background: white url(/images/static/graphics/blue_arrow.png) 0px 50% no-repeat;
+    padding-left: 18px;
+    color: #297C98;
+}
+
+/* --------------- Font Embeding */
+
+@font-face {
+	font-family: 'TOONISH';
+	src: url('/css/TOONISH.eot');
+	src: local('☺'), url('/css/TOONISH.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Throw_My_Hands_Up_in_the_Air';
+	src: url('css/Throw_My_Hands_Up_in_the_Air.eot');
+	src: local('☺'), url('css/Throw_My_Hands_Up_in_the_Air.ttf')
+		format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    }
+fieldset, img { 
+    border: 0;
+    }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+ol, ul {
+    list-style: none;
+    }
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+    }
+caption, th {
+    text-align: left;
+    }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+    font-family: TOONISH;
+    }
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+    font-family: Verdana, Arial, sans-serif;
+    }	
+q:before, q:after {
+    content: '';
+    }
+abbr, acronym { 
+    border: 0;
+    }
+a {
+    text-decoration: none;
+    }
+hr {
+    margin: 0;
+}
+br.clear {
+    clear: both;
+    height: 1px;
+}
+
+input, textarea {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+/* Header */
+
+#header_wrapper {
+    background: url(/images/static/graphics/header_bg.png) repeat-x;
+    height: 114px;
+}
+
+#header {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;    
+    height: 114px;
+}
+
+#header .logo {
+    background: url(/images/static/graphics/logo.png) no-repeat;
+    width: 382px; height: 70px;
+    position: absolute;
+    left: 10px; top: 20px;
+	z-index: 0;
+}
+
+#header .menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding-top: 5px;
+}
+
+#header .menu li {
+    display: inline;
+    border-left: 1px solid #80c4d9;
+    padding: 5px 12px 0px 12px;
+}
+
+#header .menu li:first-child {
+    border-left: none;
+}
+
+#header .menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    vertical-align: bottom;
+}
+
+
+
+#header_wrapper.inner {
+    background: url(/images/static/graphics/header_big_bg.png) repeat-x;
+    height: 153px;
+}
+
+#header_wrapper.inner #header {
+    height: 153px;
+}
+
+#header_wrapper.inner .logo {
+    background: url(/images/static/graphics/header_inner_logo.png) no-repeat;
+    top: -10px; left: -10px;
+}
+
+#header_wrapper.inner #header .menu a {
+    text-transform: none;
+}
+
+#header .header_box {
+    position: absolute;
+    bottom: 0; left: 1px;
+    height: 40px;
+    width: 960px;
+    background-color: #D6E7EC;
+    border-bottom: 1px solid #A0C2CB;
+}
+
+.header_box p {
+    font-size: 12px;
+    float: left;
+    margin-top: 14px;
+    color: #297c98;
+}
+
+.header_box .col1 {
+    width: 542px;
+    margin-left: 30px;
+}
+
+.header_box .value {
+    font-weight: bold;
+}
+
+.header_font {
+	font-family: TOONISH;
+}
+
+
+
+
+
+/* Nav */
+
+#nav_wrapper {    
+    background: url(/images/static/graphics/nav_bg.png) repeat-x;
+    height: 42px;
+}
+
+#nav {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+#nav li {
+    display: block;
+    float: left;
+    padding: 10px 32px 14px;
+}
+
+#nav li a {
+    color: #44484D;
+    font-size: 11px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#nav li.active {
+    border-left: 1px solid #B8B8B8;
+    border-right: 1px solid #B8B8B8;
+    background-color: white;
+    padding-bottom: 14px;
+}
+
+#nav li.active a, #nav li a:hover {
+    color: #0d89c7;
+}
+
+
+#nav div.search {
+    width: 542px;
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+}
+
+#nav .help {
+    margin-top: 8px;
+    float: left;
+    font-size: 11px;
+    color: #297c98;
+    line-height: 1.2em;
+}
+
+#nav div.search label {
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#nav div.search input {
+    margin-right: 6px;
+    padding: 3px;
+    width: 248px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+/* Panels */
+
+
+.panel {
+    width: 309px;
+}
+
+.panel .top {
+    background: url(/images/static/graphics/panel_top.png) no-repeat;
+    height: 7px;
+}
+
+.panel .header {
+    background: url(/images/static/graphics/panel_header_blue.png) no-repeat;
+    height: 38px;
+    padding: 0px 10px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.panel.black .header {
+    background: url(/images/static/graphics/panel_header_black.png) no-repeat;
+}
+
+.panel.gray .header {
+    background: url(/images/static/graphics/panel_header_gray.png) no-repeat;
+}
+
+.panel .middle {
+    background: url(/images/static/graphics/panel_middle.png) repeat-y;
+    padding: 20px 25px;
+    font-size: 11px;
+    color: #666666;
+    position: relative;
+}
+
+.panel .bottom {
+    background: url(/images/static/graphics/panel_bottom.png) repeat-y;
+    height: 7px;
+}
+
+
+.panel .header h1 {
+    display: block;
+    padding: 12px 14px;
+    font-weight: bold;
+}
+
+.panel .header .button {
+    float: right;
+    margin-top: 7px;
+    margin-right: 4px;
+}
+
+.panel .middle .info {
+    background: white;
+}
+
+.panel .middle .info .label {
+    float: left;
+    margin: 6px 0;
+    margin-left: 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.panel .middle .info a.go {
+    float: right;
+    margin: 6px 0;
+    margin-right: 8px;
+    font-size: 11px;
+    background: white url(/images/static/graphics/blue_arrow.png) 0px 50% no-repeat;
+    padding-left: 18px;
+    color: #297C98;
+}
+
+.panel .middle .info .last_run {
+    float: right;
+    margin: 6px 0;
+    margin-right: 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.panel .middle div.hr {
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 4px 0px;
+    padding: 0;
+}
+
+
+/* Buttons */
+.button{
+    display: inline-block;
+    border: 0;
+    background: none;
+    vertical-align: middle;    
+    width: 83px; height: 24px;
+}
+
+.login.button {
+    background: url(/images/static/graphics/buttons/login.png) no-repeat;
+    width: 84px;
+}
+
+.read_more.button {
+    background: url(/images/static/graphics/buttons/read_more.png) no-repeat;
+    width: 125px;
+}
+
+.register.button {
+    background: url(/images/static/graphics/buttons/register.png) no-repeat;
+    width: 95px;
+}
+
+.create.button {
+    background: url(/images/static/graphics/buttons/create.png) no-repeat;
+}
+
+.activate.button {
+    background: url(/images/static/graphics/buttons/activate.png) no-repeat;
+}
+
+.search.button {
+    background: url(/images/static/graphics/buttons/search.png) no-repeat;
+}
+
+.post.button {
+    background: url(/images/static/graphics/buttons/post.png) no-repeat;
+}
+
+.cancel.button {
+    background: url(/images/static/graphics/buttons/cancel.png) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/* Content */
+
+body {
+    background-color: #f0f0f0;
+}
+
+#content_wrapper {
+    background: url(/images/static/graphics/body_bg.png) repeat-x;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    background: url(/images/static/graphics/content_bg.png) 1px 0 no-repeat;
+    padding: 0 19px 0px 21px;
+}
+
+#content {
+    background-color: white;
+    min-height: 430px;
+}
+.details {
+	font-family: "Throw My Hands Up in the Air";
+	font-weight: bold;
+}
+
+
+
+
+
+/* Footer */
+
+#footer {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    color: #666666;
+}
+
+.footer_links {
+    float: left;
+    color: #999999;
+    font-size: 10px;
+}
+
+.footer_links a {
+    color: #999999;
+    font-size: 10px;
+    display: inline-block;
+    padding: 2px 8px;
+    border-left: 1px solid #CCCCCC;
+}
+
+.footer_links a:first-child {
+    border-left: none;
+}
+
+.powered_by {
+    float: right;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+
+#footer div.hr {
+    border: none;
+    background: url(/images/static/graphics/horiz_rule.png) repeat-x;
+    clear: both;
+    margin: 7px 0px 7px 20px;
+    height: 2px;
+}
+
+#footer em {
+    color: #0d89c7;
+
+}
+
+#footer h1 {
+    float: left;
+    width: 290px;
+    font-size: 21px;
+    color: #0d89c7;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+#footer div.col {
+    font-size: 12px;
+    float: left;
+    width: 270px;
+    margin: 5px 10px 10px 0px;
+    padding: 3px 20px;
+    background: url(/images/static/graphics/vert_rule.png) no-repeat;
+    min-height: 250px;
+}
+
+#footer div.first, #footer h1.first {
+    margin-left: 20px;
+    background: none;
+    padding-left: 0;
+}
+
+#footer div.why_physicians {
+    line-height: 1.8em;
+}
+
+#footer div.why_physicians .read_more {
+    margin-top: 10px;
+    margin-left: -2px;
+
+}
+
+#footer div.whats_new {
+    padding: 3px 0px 3px 10px;
+}
+
+#footer div.whats_new li {
+    background: white url(/images/static/graphics/blue_arrow.png) 6px 50% no-repeat;
+    padding: 5px 0px 5px 24px;
+    margin: 2px 0px;
+}
+
+#footer div.contact p {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#footer .footer_links {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Content */
+
+
+.teaser {
+    float: left; 
+    width: 632px; height: 430px;
+    background: url(/images/static/graphics/intro_image.jpg) no-repeat;
+}
+
+.login_registration {
+    float: left;
+    width: 320px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login_registration label {
+    display: block;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+
+.login_registration input {
+    display: block;
+    width: 258px; height: 21px;
+    margin-bottom: 6px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+}
+
+.login_registration .forgot_password {
+    float: right;
+    color: #666666;
+    text-decoration: underline;
+}
+
+.login_registration .login.button {
+    float: right;
+    vertical-align: top;
+    margin-left: 12px;
+}
+
+.login_registration .help {
+    clear: both;
+    margin-top: 25px;
+}
+
+.panel.registration {
+    margin-top: 5px;
+}
+
+
+.registration .button {
+    margin-top: 10px;
+    margin-left: -2px;
+}
+
+
+
+
+/* Dashboard */
+
+
+body.dashboard .panel {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 6px;
+}
+
+body.dashboard .panel.first {
+    margin-left: 12px;
+}
+
+body.dashboard .panel.first_row {
+    margin-top: 12px;
+}
+
+body.dashboard .panel .middle {
+    min-height: 130px;
+}
+
+body.dashboard .panel .middle {
+    padding: 20px 12px;
+}
+
+body.dashboard .panel .middle p {
+    margin: 0px 10px;
+}
+
+body.dashboard  .panel.automated_reminders .middle, body.dashboard  .panel.create_forms .middle {
+    padding-top: 6px;
+    min-height: 144px;
+}
+
+body.dashboard .panel .bottom_info {
+    position: absolute;
+    bottom: 4px;
+    width: 285px;
+}
+
+body.dashboard #header .logo {
+    height: 110px;
+}
+
+
+
+
+/* Patient Inner */
+body.patient_inner #header .logo {
+    height: 110px;
+}
+
+body.patient_inner #header .col1 {
+    font-weight: bold;
+}
+
+
+body.patient_inner #header a.go {
+    float: right;
+    margin: 14px 0;
+    margin-right: 18px;
+    font-size: 11px;
+    background: url(/images/static/graphics/blue_arrow.png) 0px 50% no-repeat;
+    padding-left: 18px;
+    color: #297C98;
+}
+
+body.patient_inner #nav li {
+    padding-top: 12px;
+}
+
+body.patient_inner #nav li.active {
+    padding: 15px 8px 14px;
+}
+
+body.patient_inner #nav li a {
+    text-transform: none;
+    font-size: 12px;
+}
+
+
+body.patient_inner #nav li.active a {
+    padding: 8px 12px 22px 12px;
+    background-color: #D5E6EC;
+    position: relative;
+    z-index: 1001;
+}
+
+.sub_nav {
+    position: relative;
+    border: 8px solid white;
+    background-color: #D5E6EC;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 1000;
+}
+
+.sub_nav ul {
+    clear: left;
+    position: relative;
+    z-index: 1002;
+}
+
+.sub_nav ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 24px;
+}
+
+.sub_nav ul li.active {    
+    background: url(/images/static/graphics/subnav_bg_right.png) right top no-repeat;
+    padding-right: 12px;
+    margin-right: 12px;
+}
+
+.sub_nav ul li a {
+    font-size: 12px;
+    display: inline-block;
+    padding: 9px 12px 10px;
+    padding-right: 0;
+    height: 14px;
+    color: #3A3E43;
+}
+
+.sub_nav ul li a:hover {
+    color: #297C98;
+}
+
+.sub_nav ul li.active a {
+    color: white;
+    background: url(/images/static/graphics/subnav_bg.png) left top no-repeat;
+}
+
+.sub_nav li.clear {
+    clear: both;
+    float: none;
+    display: block;
+    width: 0; height: 0;
+}
+
+.num_documents {
+    font-size: 11px;
+    margin: 0 8px;
+    padding: 9px 12px 10px;
+    height: 14px;
+    color: white;
+    background: url(/images/static/graphics/message_bg.png) left top repeat-x;
+}
+
+
+.post_message {
+    margin: 0 8px;
+}
+
+.post_message h1 {
+    padding: 9px 12px 10px;
+    color: #48A8C7;
+    background: #E2EDF2;
+    font-size: 11px;
+}
+
+.post_message h1 span {
+    float: right;
+    color: #666666;
+}
+
+.post_message form {
+    padding: 24px;
+    background: #f5f5f5;
+}
+
+.post_message .row {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.post_message .row label {
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #666666;
+    margin-right: 8px;
+}
+
+.post_message .row input,  .post_message .row textarea {
+    width: 750px;
+    padding: 3px 4px;
+}
+
+.post_message textarea {
+    height: 80px;
+}
+
+.post_message .row.message label {
+    padding-top: 3px;
+    vertical-align: top;
+}
+
+.post_message .row.options {
+    margin-top: 10px;
+    margin-left: 115px;
+}
+
+.post_message .row.options label {
+    width: auto;
+    padding: 5px 0px;
+}
+
+.post_message .row.options input {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    width: auto;
+    border: 0;
+    background: none;
+}
+
+.post_message .row.options label.html {
+    border-right: 1px solid #cccccc;
+    padding-right: 30px;
+    margin-left: 5px;
+}
+
+.post_message .row.options label.send_email {
+    margin-left: 5px;
+}
+
+.post_message .row.buttons {
+    text-align: right;
+}
+
+.post_message .row.buttons .cancel {
+    margin-right: 8px;
+}
+
+
+
+.messages {
+    margin: 0px 8px;
+}
+
+.messages table {
+    width: 100%;
+}
+
+.pagination {
+    text-align: right;
+    padding-right: 10px;
+}
+
+p.pagination {
+    margin: 12px 0;
+}
+
+.pagination a {    
+    color: #2B7E9A;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.actions {
+    text-align: right;
+    padding-right: 10px;
+    color: #2B7E9A;
+}
+
+.actions a {
+    color: #2B7E9A;
+    font-size: 11px;
+}
+
+.actions .view {
+    padding-left: 18px;
+    background: url(/images/static/graphics/blue_arrow.png) left 50% no-repeat;
+    padding-right: 8px;
+}
+
+
+.actions .remove {
+    padding-left: 16px;
+    background: url(/images/static/graphics/blue_cross.png) left 50% no-repeat;
+}
+
+th {
+    font-size: 11px;
+    color: #48A8C7;
+    background: #E3EEF2;
+    padding: 8px 12px;
+    border-bottom: 1px solid #48A8C7;
+}
+
+td {
+    padding: 12px 12px;
+    font-size: 12px;
+    color: #333333;
+}
+
+tr {
+    padding: 2px 0;
+}
+
+
+tr.even td {
+    background: #F5F5F5 url(/images/static/graphics/horiz_rule.png) left bottom repeat-x;
+}
+
+tr.odd td {
+    background: url(/images/static/graphics/horiz_rule.png) left bottom repeat-x;
+}
+
+
+.messages table .category {
+    width: 120px;
+}
+
+.messages table .date {
+    width: 120px;
+}
+
+.messages table .subject {
+}
+
+.messages table .attachment {
+    width: 200px;
+}
+
+.messages table .actions {
+    width: 80px;
+}
+.action_buttons {
+    font-size: 12px;
+    margin: 8px; 8px;
+    padding: 9px 12px 10px;
+    height: 15px;
+    color: white;
+    background-color: #297c98;
+}

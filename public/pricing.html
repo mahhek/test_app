@@ -1,0 +1,1577 @@
+<!DOCTYPE html SYSTEM "http://www.indonez.com/xhtml1-iframe.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Helios - Minimalist Business Template 7</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="helios-icon" href="/helios-icon.png" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="public/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/style.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/custom-style.css" rel="stylesheet" type="text/css" />
+<link href="public/stylesheets/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="public/stylesheets/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="public/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="public/javascripts/dropdown.js"></script>
+<script type="text/javascript" src="public/javascripts/vtip.js"></script>
+<script type="text/javascript" src="public/javascripts/jquery.colorbox.js"></script>
+<script type="text/javascript" src="public/javascripts/ddaccordion.js"></script>
+<script type="text/javascript" src="public/javascripts/faq-functions.js" ></script>
+<script type="text/javascript">
+   $(function(){		
+	//Colorbox Setting
+	$("a[rel='portfolio']").colorbox({transition:"fade"});
+	
+	//Tab Jquery
+	$(".tab_content").hide(); 
+	$("ul.tabs li:first").addClass("active").show(); 
+	$(".tab_content:first").show(); 
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active");
+		$(this).addClass("active"); 
+		$(".tab_content").hide(); 
+		var activeTab = $(this).find("a").attr("href"); 
+		$(activeTab).fadeIn(); 
+		return false;
+	});
+});		
+</script>
+
+</head>
+
+<body>	
+	<div id="container"> 
+    	<div id="top-container">
+        
+        	<!-- BEGIN OF HEADER -->
+            <div id="header-container">
+            	<div id="header-box">
+                
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Helios Logo" /></a>
+                    </div>
+                    <div id="righttop-header">
+                        <div id="top-social">
+                            <ul>
+                                <li><a href="#"><img src="images/social-icons/top-social/social1.png" alt="" /></a></li>
+                                <li><a href="#"><img src="images/social-icons/top-social/social2.png" alt="" /></a></li>
+                                <li><a href="#"><img src="images/social-icons/top-social/social3.png" alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <div id="top-slogan">
+                            <h4>Welcome to <span class="title-black">HELIOS</span>, you're on the right place to find <br/> many creative solution, because we're is factory of idea</h4>
+                        </div>
+                        <div id="mainmenu">
+                            <ul id="menu">
+                                <li><a href="index.html">home</a>
+                                    <ul> 
+                                        <li><a href="index-2.html">home roundabout</a></li>                           
+                                        <li><a href="index-3.html">home diapo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">about</a>
+                                    <ul> 
+                                        <li><a href="about-layout1.html">about layout 1</a></li>
+                                        <li><a href="about-layout2.html">about layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">services</a>
+                                    <ul> 
+                                        <li><a href="services-layout1.html">services layout 1</a></li>
+                                        <li><a href="services-layout2.html">services layout 2</a></li>
+                                        <li><a href="services-layout3.html">services layout 3</a></li>
+                                    </ul> 	
+                                </li>
+                                <li><a href="#">portfolio</a>
+                                    <ul> 
+                                        <li><a href="portfolio-layout1.html">portfolio layout 1</a></li>
+                                        <li><a href="portfolio-layout2.html">portfolio layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">blog</a>
+                                    <ul> 
+                                        <li><a href="blog-layout1-r.html">blog layout 1</a></li>
+                                        <li><a href="blog-layout2.html">blog layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">contact</a>
+                                    <ul> 
+                                        <li><a href="contact-layout1.html">contact layout 1</a></li>
+                                        <li><a href="contact-layout2.html">contact layout 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current"><a href="#">pages</a>
+                                    <ul>                        
+                                        <li><a href="blog-layout1-r.html">Right sidebar page</a></li>
+                                        <li><a href="blog-layout1-l.html">Left sidebar page</a></li>
+                                        <li><a href="column.html">Column page</a></li>
+                                        <li><a href="tables.html">Tables page</a></li>
+                                        <li><a href="button-list.html">Button &amp; List page</a></li>
+                                        <li><a href="typography.html">Typography page</a></li>
+                                        <li><a href="testimonials.html">Testimonials page</a></li>
+                                        <li><a href="pricing.html">Pricing plan</a></li>
+                                        <li><a href="faq.html">FAQ page</a></li>
+                                        <li><a href="single-layout1.html">Single page</a></li>                            
+                                        <li><a href="fullwidth.html">Fullwidth page</a></li>
+                                        <li><a href="404.html">404 page</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>        
+        	<!-- END OF HEADER -->
+            
+            <!-- BEGIN OF PAGE TITLE -->
+            <div id="page-title">
+            	<h1>Pricing</h1>
+                <h6>Some attractive desciption here</h6>	
+            </div>
+            <!-- END OF PAGE TITLE -->
+            
+            <!-- BEGIN OF CONTENT -->
+            <div id="content">
+            	<div class="maincontent">          	
+                        
+                	<div class="col-1">
+                     	<h3>Sample of pricing with Gold color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-gold">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium gold" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-gold">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li>
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium gold" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-gold">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li>
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium gold" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-gold">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li>
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium gold" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->  
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                        
+                        
+                        
+                        <h3>Sample of pricing with Cyan color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-cyan">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium cyan" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-cyan">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium cyan" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-cyan">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium cyan" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-cyan">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium cyan" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                        
+                        
+                        
+                        <h3>Sample of pricing with Purple color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-purple">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium purple" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-purple">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium purple" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-purple">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium purple" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-purple">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium purple" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                        
+                        
+                        
+                        <h3>Sample of pricing with Brown color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-brown">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium brown" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-brown">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium brown" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-brown">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium brown" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-brown">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium brown" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                        
+                        
+                        
+                        <h3>Sample of pricing with Rosy color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-rosy">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium rosy" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-rosy">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium rosy" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-rosy">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium rosy" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-rosy">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium rosy" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                        
+                        
+                        
+                        <h3>Sample of pricing with Green color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-green">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium green" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-green">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium green" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-green">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium green" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-green">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium green" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div> 
+                                    
+                        
+                        
+                        <h3>Sample of pricing with Yellow color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-yellow">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium yellow" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-yellow">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium yellow" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-yellow">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium yellow" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-yellow">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium yellow" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Blue color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-blue">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium blue" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-blue">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium blue" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-blue">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium blue" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-blue">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium blue" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Pink color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-pink">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium pink" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-pink">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium pink" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-pink">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium pink" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-pink">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium pink" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Orange color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-orange">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium orange" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-orange">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium orange" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-orange">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium orange" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-orange">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium orange" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Black color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-black">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium black" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-black">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium black" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-black">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium black" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-black">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium black" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Red color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-red">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium red" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-red">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium red" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-red">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium red" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-red">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium red" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with White color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-white">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium white" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-white">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium white" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-white">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium white" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-white">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium white" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Gray color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium gray" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium gray" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium gray" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium gray" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->
+                        
+                        
+                        
+                        <div class="clear"></div>
+                        <div class="divider"></div>
+                        
+                        
+                        
+                        <h3>Sample of pricing with Magenta color</h3>
+                   		<p class="pricing-font">Get started in less than 60 seconds. Pick a plan below to sign up!</p>                
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing-marginleft pricing-magenta">
+                        	<div class="pricing-title">
+                        		<h5>Free Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$0</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium magenta" href="#"><span>Sign up</span></a>
+                            </div>                   
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-noround pricing-magenta">
+                        	<div class="pricing-title">
+                        		<h5>Eco Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$6</div>
+                                <div class="permonth">PER<br/>MONTH</div> 
+                                <a class="button medium magenta" href="#"><span>Sign up</span></a>
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing-recommend2 pricing-magenta">
+                        	<div class="pricing-title">
+                        		<h5>Pro Plan</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li>
+                            </ul>
+                            <div class="price-area recommend-price">
+                                <div class="price">$25</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium magenta" href="#"><span>Sign up</span></a>
+                            </div>                            
+                        </div>
+                        <!-- end of pricing front 3 -->
+                        
+                        <!-- begin of pricing front 4 -->
+                        <div class="pricing-noround-left pricing-magenta">
+                        	<div class="pricing-title">
+                        		<h5>Biz Plan</h5>
+                            </div>
+                            <p class="pricing-desc">Best for small teams or individuals with clients</p>
+                            <ul class="check-list pr-list">
+                            	<li>100,000 Page Views / Mo.</li>
+                                <li>Unlimited Sites</li>
+                                <li>No Sharing</li> 
+                                <li>800Mb Disk Space</li> 
+                            </ul>
+                            <div class="price-area">
+                                <div class="price">$12</div>
+                                <div class="permonth">PER<br/>MONTH</div>
+                                <a class="button medium magenta" href="#"><span>Sign up</span></a> 
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 4 -->                     
+                    </div>
+                    
+                    <div class="col-2">
+                    	<h4>Affordable Cost with Quality Riveting</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eius mod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip</p>
+                    </div>
+                    <div class="col-2">
+                     	<h4>We accept</h4>
+                        <span>Temporibus autem quibusdam officiis debitis rerum necessitatibus</span>
+                        <ul class="nolistblock">
+                    	    <li><img src="images/pricing-img/payment1.gif" alt="" /></li>
+                            <li><img src="images/pricing-img/payment2.gif" alt="" /></li>
+                            <li><img src="images/pricing-img/payment3.gif" alt="" /></li>
+                            <li><img src="images/pricing-img/payment4.gif" alt="" /></li>
+                            <li class="marginoff"><img src="images/pricing-img/payment5.gif" alt="" /></li>
+                        </ul>
+                    </div>         
+                            
+            	</div>
+            </div>            
+            <!-- END OF CONTENT -->
+            
+        </div>
+        
+        <!-- BEGIN OF BOTTOM CONTENT -->
+        <div id="bottom-container">
+        	<div id="bottom-content">
+           	
+            	<div id="client-logo">
+                	<ul>
+                    	<li><img src="images/client1.gif" alt="" /></li>
+                        <li><img src="images/client2.gif" alt="" /></li>
+                        <li><img src="images/client3.gif" alt="" /></li>
+                        <li><img src="images/client4.gif" alt="" /></li>
+                        <li><img src="images/client5.gif" alt="" /></li>
+                        <li><img src="images/client6.gif" alt="" /></li>
+                    </ul>
+                </div>
+                <div class="bottom-column1">
+                	<h5>About HELIOS</h5>
+                    <p>Nunc hendrerit libero scelerisque pellentesque praesent posuere digsim ipsum vulputate donec anulla cum sociis natoqu penatibus emagnis voluptatem quia volu eptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p>Montes nascetur ridiculus mus mauris sedapien ac nunc facilisis bibendum eu quis orci etiam mollis velit et magna dapibus scelerisqueq</p>
+                </div>
+                <div class="bottom-column2">
+                	<h5>Trading Terms</h5>
+                    <p>Read our easy to understand Trading Terms so you know how we do business and what we expect from our clients.</p>
+                    <p><a href="#">Privacy Policy &amp; Disclaimer</a></p>
+                </div>
+                <div class="bottom-column2">
+                	<h4>1600 086 688 <br/> 1600 086 677</h4>
+                    <p><a href="mailto:info@indonez.com">info@helios.com</a></p>
+                    <p>PO BOX 1234,<br/>Jakarta, JKT 1220</p>
+                </div>                 
+                
+            </div>
+            <div id="footer-wrapper">
+            	<div id="footer-content">
+                	<div class="footer-logo">
+                    	<img src="images/footer-logo.png" alt="" />
+                    </div>
+                    <div class="footer-text">
+                    	<p>© 2011 HELIOS. Developed by Indonez Techno Pratama. <br/> Lorem Ipsum dorem nulla sed eget augue maurisvestibulum dolor etiam ut posuere dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF BOTTOM CONTENT -->
+    
+    <div class="clear"></div>                              	       
+    </div>      
+<script type="text/javascript">$('#noscript').remove();</script>     
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37519169-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

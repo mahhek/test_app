@@ -1,0 +1,26 @@
+<div class="sign_in_box">
+  <h2 class="red_color">Sign in</h2>
+
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <%= f.label :email %><br />
+    <%= f.email_field :email, :autofocus => true , :class => "big_text_field"%><br />
+
+    <%= f.label :password %><br />
+    <%= f.password_field :password , :class => "big_text_field"%><br/>
+
+    <% if devise_mapping.rememberable? -%>
+      <br/>
+      <div style="float:left;width:100%;" >
+        Remember me <%= f.check_box :remember_me %>
+      </div>
+      <br/>
+    <% end -%>
+
+    <div>
+      <br/>
+      <%= f.submit "Sign in", :class => "button_me_long" %>
+    </div>
+  <% end %>
+  <br/>
+  <%= render "devise/shared/links" %>
+</div>

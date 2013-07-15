@@ -1,0 +1,405 @@
+<!DOCTYPE html SYSTEM "http://www.indonez.com/xhtml1-iframe.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="helios-icon" href="/helios-icon.png" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/custom-style.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/stylesheets/noscript.css" rel="stylesheet" type="text/css" media="screen,all" id="noscript" />
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/dropdown.js"></script>
+<script type="text/javascript" src="/javascripts/vtip.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/javascripts/ddaccordion.js"></script>
+<script type="text/javascript" src="/javascripts/faq-functions.js" ></script>
+<script type="text/javascript" src="/javascripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="/javascripts/imgrollover.js"></script>
+<script type="text/javascript">
+   $(function(){
+		//Front Testimonials Setting
+			$('.front-testimonials ul').cycle({
+            timeout: 7000, 
+            fx:     'blindY',
+			cleartypeNoBg: true     
+        });
+		
+		//Tab Jquery
+		$(".tab_content").hide(); 
+		$("ul.tabs li:first").addClass("active").show(); 
+		$(".tab_content:first").show(); 
+		$("ul.tabs li").click(function() {
+			$("ul.tabs li").removeClass("active");
+			$(this).addClass("active"); 
+			$(".tab_content").hide(); 
+			var activeTab = $(this).find("a").attr("href"); 
+			$(activeTab).fadeIn(); 
+			return false;
+		});
+		
+		//Colorbox Setting
+		$("a[rel='portfolio']").colorbox({transition:"fade"});
+		
+        
+		//Slideshow Setting
+			$('#slideshow ul').cycle({
+            timeout: 5000, 
+            fx:     'fade', 
+			prev:   '#slideprev', 
+			next:   '#slidenext',      
+            pause:   0,	
+			cleartypeNoBg: true, 
+            pauseOnPagerHover: 0
+        });
+             
+        });
+ </script>
+
+</head>
+
+<body onLoad="MM_preloadImages('//assets/static/graphics/logo_pogo.png','//assets/client3_on.gif','//assets/client1_on.gif','//assets/client2_on.gif','//assets/client4_on.gif','//assets/footer-logo_on.png')" >
+	<div id="container"> 
+    	<div id="top-container">
+        
+        	<!-- BEGIN OF HEADER -->
+            <div id="header-container">
+            	<div id="header-box">
+                
+                    <div id="logo">
+                        <a href="/index.html">
+						<img src="//assets/logo.png" alt="HIPAA Security Suite Logo" width="276" height="152" /></a>
+                  </div>
+                    <div id="righttop-header">
+                        <div id="top-social">
+                            <ul><li><a href="/users/sign_in">Login</a></li>
+                            </ul>
+                        </div>
+                        <div id="top-slogan">
+                            <h4 align="center"><span class="title-red">HIPAA 
+							Security Suite</span> <br/> 
+                            Complete Compliance</h4>
+                        </div>
+                        <div id="mainmenu">
+                            <ul id="menu">
+                                <li class="current"><a href="/">home</a>
+
+                                </li>
+                                <li ><a href="/issues.html">issues</a>
+                                </li>
+                                <li ><a href="/solutions.html">solutions</a>
+	
+                                </li>
+
+                                <li ><a href="/contact.html">contact</a>
+                                </li>
+                                <li ><a href="/about.html">about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>     
+       	
+
+<!-- END OF HEADER -->
+
+
+
+
+
+
+
+                
+            
+
+
+
+
+<title>HIPAA Security Suite</title>
+
+
+
+
+
+                
+            
+
+
+
+
+<div id="content">
+    <div class="maincontent">
+	
+<div id="slideshow-container">
+            	<div id="slideshow">
+                	<ul>
+                    	<!-- begin of slide1 -->
+                    	<li>
+                    	<div class="slide-text">
+                                <h4>Protecting health information has never been easier.</h4>
+                                <p>Managing HIPAA Compliance can be a full time job. The HIPAA Security Suite is a complete, turn key solution providing a single dashboard to manage all of your practice's HIPAA requirements.</p>
+                                <a class="button-helios alt-gray" href="contact.html"><span>get a quote now</span></a>
+                            </div>
+                            <div class="slide-img">
+                            	<img src="/assets/slideshow-border.png" alt="" class="slide-border" />
+                                <img style="background: url('/assets/compliant_.jpg') no-repeat 0 0" src="/assets/space.gif" width="678" height="443" alt="" class="slide-img-rounded" />
+                            </div>                        
+                        </li>
+                        <!-- end of slide1 -->
+                        <!-- begin of slide2 -->
+                        <li>
+                        <div class="slide-text">
+                                <h4>Meeting Meaningful Use means being HIPAA Compliant.</h4>
+                                <p>Can you prove it? New HIPAA laws mandate specific privacy requirements. Failure to prove you're compliant can mean failing a Meaningful Use audit, fines and penalties for each violation, and more.</p>
+                                <a class="button-helios alt-gray" href="contact.html"><span>get compliant now</span></a>
+                            </div>
+                            <div class="slide-img">
+                            	<img src="/assets/slideshow-border.png" alt="" class="slide-border" />
+                                <img style="background: url('/assets/MU_.jpg') no-repeat 0 0" src="/assets/space.gif" width="678" height="443" alt="" class="slide-img-rounded" />
+                            </div>                        
+                        </li>
+                        <!-- end of slide2 -->
+                        <!-- begin of slide3 -->
+                        <li>
+                        <div class="slide-text">
+                                <h4>Physicians and their employees<br/>can be fined and imprisoned.</h4>
+                                <p>Increased HIPAA penalties now include fines up to $1.5 million and possible imprisonment. In 2011, physicians and medical staff were sent to jail for HIPAA violations.</p>
+                                <a class="button-helios alt-gray" href="contact.html"><span>get a quote now</span></a>
+                            </div>
+                            <div class="slide-img">
+                            	<img src="/assets/slideshow-border.png" alt="" class="slide-border" />
+                                <img style="background: url('/assets/Prison_.jpg') no-repeat 0 0" src="/assets/space.gif" width="678" height="443" alt="" class="slide-img-rounded" />
+                            </div>                        
+                        </li>
+                        <!-- end of slide3 -->
+                        <!-- begin of slide4 -->
+                        <li>
+                        <div class="slide-text">
+                                <h4>We provide 24 hour emergency support!</h4>
+                                <p>Have a HIPAA crisis? We cover medical facilities with emergency support from offices nationwide.</p>
+                                <a class="button-helios alt-gray" href="contact.html"><span>get a quote now</span></a>
+                            </div>
+                            <div class="slide-img">
+                            <img src="/assets/slideshow-border.png" alt="" class="slide-border" />
+                                <img style="background: url('/assets/24support.jpg') no-repeat 0 0" src="/assets/space.gif" width="678" height="443" alt="" class="slide-img-rounded" />
+                            </div>                        
+                        </li>
+                        <!-- end of slide4 -->                        
+                    </ul>
+                    
+                    <div id="slidenav">
+                        <div id="slideprev"></div>
+                        <div id="slidenext"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF SLIDESHOW -->
+            
+                  	 <div class="col-4">
+                    	<div class="front-number">
+                        	<span class="dropcap1">1 </span>
+                        </div>
+                    	
+                    	<div class="front-title">
+                       	  <h5>HIPAA Control Center</h5>
+                            <p>&nbsp;</p>
+                        </div> <br>       		
+                        <p><div align="center"><strong><font color="#ac1927">COMING SOON!</font></strong>
+                        </div>With the HIPAA Control Center you can manage and 
+						store all of your HIPAA documentation, policy manuals, employee training tracking, computer inventory tracking, receive real time network activity status, and more from a single location.</p>
+                   </div>
+          
+                	 <div class="col-4">
+                    	<div class="front-number">
+                        	<span class="dropcap1">2</span></div>
+                        <div class="front-title">
+                        	<h5>Documentation</h5>
+                            <p>A Comprehensive HIPAA Package </p>
+                        </div> <br>         		
+                        <p>The HIPAA Security Suite includes a comprehensive set 
+						of documents that includes network configuration 
+						diagrams, security and disaster policy manuals, privacy 
+						policy manuals, and much more.<br/><img alt="" height="139" src="//assets/productBox.jpg" width="139"></p>
+                   </div>
+                   <div class="col-4">
+                		<div class="front-number">
+                        	<span class="dropcap1">3</span></div>
+                        <div class="front-title">
+                        	<h5>Risk Assessment</h5>
+                            <p>Our IT experts conduct a thorough security 
+							checklist of your entire information infrastructure.</p>
+                        </div>        <br>  		
+                        <p>Mandated by the American 
+						Recovery and Reinvestment Act you must now conduct a Risk Assessment annually. Our HIPAA trained IT experts conduct the necessary assessment and evaluations and provide you with detailed documentation.&nbsp; </p>
+                   </div>
+                   <div class="col-4">
+                		<div class="front-number">
+                        	<span class="dropcap1">4</span>
+                        </div>
+                        <div class="front-title">
+                        	<h5>Training</h5>
+                            <p>Live HIPAA required training for your employees</p>
+                        </div>        <br>		
+                        <p>The HIPAA Security Suite includes live training for 
+						your staff on the HIPAA Laws, what they are required to 
+						know, and the handling of protected health information 
+						(PHI).</p>
+                   </div>
+                   
+                   <div class="front-testimonials">
+                   		<ul>
+                        	<li>
+                            	<div class="testi-text">
+                                    <p>If you&#39;re running your practice without a 
+									serious regard to HIPAA, you run the risk of 
+									fines and imprisonment for you and your 
+									staff. HIPAA is no joke.</p>
+                                    <p class="testi-author"></p>
+                                </div>
+                                <div class="testi-img">
+                                	<img src="//assets/female_doctor1.png" alt="" />
+                                </div>
+                            </li>
+                            <li class="no-script">
+                            	<div class="testi-text">
+                                    <p>When we researched the requirements we needed to meet, and the time it was going 
+									to require to become compliant, the HIPAA Security Suite proved itself to be a cost effective solution.</p> <p class="testi-author">Bonnie Lynch, Administrator - Mountain Valley Orthopedics</p>
+									</div>
+                                <div class="testi-img">
+                                	<img src="//assets/female_operator1.png" alt="" />
+                                </div>
+                            </li>
+                            <li class="no-script">
+                            	<div class="testi-text">
+                                    <p>We&#39;ve been using Acentec for software and 
+									IT support for several years. When they 
+									released their HIPAA program, we looked 
+									around and couldn&#39;t find anything as 
+									comprehensive as what they offered.</p>
+                                    <p class="testi-author">Dr. Bruce Hoyle - Advanced Vein Center</p>
+                                </div>
+                                <div class="testi-img">
+                                	<img src="//assets/front-image.png" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+                   
+                   <div class="col-3">
+                   		<h5>HIPAA Compliance in a can!</h5>
+                        <img height="1" src="/assets/space.gif" width="34"><img alt="" class="imgborder" height="179" src="//assets/HIPPAcan3D.png" width="123">
+                        <p>Included with your Risk Assessment is an emergency container stocked with essentials.</p>
+                        <a class="button-helios alt-gray" href="contact.html"><span>Click to get started.</span></a>
+                   </div>
+                   <div class="col-2-2">
+                   		<h5>The Leading Comprehensive HIPAA Compliance Solution!</h5>                    	        		
+                        
+                        <!-- begin of pricing front 1 -->
+                        <div class="pricing pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Documentation</h5>
+                            </div>
+                            <p class="pricing-desc">Complete set of all HIPAA 
+							required documentation.</p>
+                            <ul class="check-list pr-list">
+                            	<li>HIPAA Policy Manuals</li>
+                                <li>Employee Agreements</li>
+                                <li>Vendor Agreements</li>         
+                            </ul>
+                            <div class="price-area">
+                            </div>                           
+                        </div>
+                        <!-- end of pricing front 1 -->
+                        <!-- begin of pricing front 2 -->
+                        <div class="pricing-recommend pricing-red">
+                        	<div class="pricing-title">
+                        		<h5>Risk Assessment</h5>
+                            </div>
+                            <p class="pricing-desc recommend-desc">Complete 
+							HIPAA Suite</p>
+                            <ul class="check-list pr-list">
+                            	<li>Documentation Kit</li>
+                                <li>Risk Assessment </li>
+                                <li>Live HIPAA Training</li>            
+                            </ul>     
+                        </div>
+                        <!-- end of pricing front 2 -->
+                        <!-- begin of pricing front 3 -->
+                        <div class="pricing last-pricing pricing-gray">
+                        	<div class="pricing-title">
+                        		<h5>Training</h5>
+                            </div>
+                            <p class="pricing-desc">Meets the core minimum HIPAA requirements.</p>
+                            <ul class="check-list pr-list">
+                            	<li>Documentation Kit</li>
+                                <li>Initial Security Assessment</li>
+                                <li>Training Live via Internet</li>
+       
+                            </ul>
+
+                        </div>
+                   </div>                   
+         </div>
+    </div>               
+            
+            <!-- END OF CONTENT -->
+            
+ 
+		 	
+        </div>
+        <!-- BEGIN OF BOTTOM CONTENT -->
+        <div id="bottom-container">
+        	<div id="bottom-content">
+           	
+                <div class="bottom-column1">
+                	<h5>Distributed by Acentec, Inc.</h5>
+                    <p>Acentec, Inc. is a turn-key provider of technology solutions to the medical community. We offer professional IT services to medical offices nationwide, medical billing services with Certified Coders out of our Florida office, PogoMD 
+					Practice Portal, and Certified Medinformatix EMR and Practice Management software. Our best in class solutions are engineered to improve medical practice efficiency and performance. Our results oriented team is experienced, dedicated, and committed to assisting each practice in the achievement of their goals.</p>
+                    <p>Acentec, Inc. - <em>Improving Medical Practice Performance</em>®</p>
+                </div>
+                <div class="bottom-column2">
+                	<h5>Terms of Use</h5>
+                    <p>Please read our easy to understand Terms of Use.</p>
+                    <p><a href="#">Privacy Policy &amp; Disclaimer</a></p>
+                </div>
+                <div class="bottom-column2">
+                	<h4>800 970 0402<br/> 949 474 7774</h4>
+                    <p><a href="mailto:hss-info@acentec.com">info@acentec.com</a></p>
+                    <p>17815 Sky Park Circle<br/>
+                    Suite J,<br/>
+                    Irvine, CA 92614</p>
+                </div>                 
+                
+            </div>
+            <div id="footer-wrapper">
+            	<div id="footer-content">
+                     <div class="footer-text">
+                    	<p>© 2012 eXcitewerks, inc. Technology powered by PogoMD®. <br/> All international rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF BOTTOM CONTENT -->
+    
+    <div class="clear"></div>                              	       
+      </div>     
+<script type="text/javascript">$('#noscript').remove();</script>     
+</body>
+</html>

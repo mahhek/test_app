@@ -1,0 +1,25 @@
+<div style="margin-left: 50px;background-color: #F0F0F0;border: 2px;width:300px;padding: 50px">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <br/>
+    Email<br />
+    <%= f.email_field :email, :autofocus => true %><br/>
+
+    <br/>
+    Password <br />
+    <%= f.password_field :password %><br/>
+
+    <br/>
+    Password Confirmation<br />
+    <%= f.password_field :password_confirmation %><br/>
+
+    <div>
+      <br/>
+      <%= f.submit "Sign up", :class => "button_me"%></div>
+  <% end %>
+  <br/>
+  <%#= render "devise/shared/links" %>
+</div>

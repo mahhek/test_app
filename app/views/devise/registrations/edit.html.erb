@@ -1,0 +1,24 @@
+<div class="sign_in_box">
+  <h2 class="red_color">
+    Change Password 
+  </h2>
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    <%= devise_error_messages! %>
+    <br/>
+
+    <br/>Password<br/>
+    <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.password_field :password, :autocomplete => "off", :class => "big_text_field"%><br/>
+
+    <br/>Password Confirmation<br />
+    <%= f.password_field :password_confirmation, :class => "big_text_field"%><br/>
+
+    <br/>Current Password<br/>
+    <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password , :class => "big_text_field"%><br/>
+
+    <div><br/><%= f.submit "Update" , :class => "button_me_long" %></div>
+  <% end %>
+  <br/>
+  <%#= link_to "Back", :back %>
+</div>

@@ -1,0 +1,44 @@
+<div class="sign_in_box">
+  <h4 class="red_color text_underline">
+    <%= link_to "Create New User", new_admin_user_path %>
+  </h4>
+  <br/>
+  <h2 class="red_color">Listing Users</h2>
+  <br/>
+  <% @users.each do |user| %>
+    <%if current_user.present? && current_user.id != user.id%>
+      <div>
+        First Name : <%= user.fname if user.fname%>
+      </div>
+
+      <div>
+        Last Name : <%= user.lname if user.lname%>
+      </div>
+
+      <div>
+        Email : <%= user.email if user.email %>
+      </div>
+
+      <div>
+        Company : <%= user.company if user.company%>
+      </div>
+
+      <div>
+        phone : <%= user.phone if user.phone%>
+      </div>
+
+      <div>
+        Status : <%= user.is_active  if user.is_active%>
+      </div>
+
+      <div class="border_bottom"></div>
+
+    <%#*<div id="activation_div">%>
+    <%#= render :partial => "activation_partial", :locals => {:user => user}%>
+    <%#= link_to "Show", admin_user_path(user)  %>
+    <%#*</div>%>
+      <br/><br/>
+
+    <%end%>
+  <%end%>
+</div>
