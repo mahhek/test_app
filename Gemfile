@@ -12,6 +12,8 @@ gem 'therubyracer'
 gem 'devise'
 gem "nested_form"
 
+gem "will_paginate", "~> 3.0.pre2"
+
 # use to generate PDF
 gem 'prawn'
 gem 'prawn-layout'

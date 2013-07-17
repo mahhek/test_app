@@ -103,11 +103,18 @@
       </div>
       <div id="righttop-header">
         <div id="top-social">
-
+          <ul>
+            <li>
+              <% if user_signed_in? %>
+                Welcome <%=current_user.fname%>
+                <%=current_user.lname%>!
+                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+              <%end%>
+            </li>
+          </ul>
         </div>
         <div id="top-slogan">
-          <h4 align="center"><span class="title-red">HIPAA
-							Security Suite</span> <br/>
+          <h4 align="center"><span class="title-red">HIPAA Security Suite</span> <br/>
             <span class="auto-style2">
               <strong class="auto-style3">Advancing HIPAA Compliance Management</strong>
             </span></h4>
@@ -115,16 +122,11 @@
         <div id="mainmenu">
           <ul id="menu">
             <li class="current">
-              <a href="/dashboard">dashboard</a>
+              <a href="/dashboard">Dashboard</a>
             </li>
             <li>
               <a href="/users/edit">Change Password</a>
             </li>
-            <% if user_signed_in? %>
-              <li >
-                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-              </li>
-            <%end%>
           </ul>
         </div>
       </div>

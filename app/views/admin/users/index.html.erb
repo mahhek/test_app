@@ -2,8 +2,13 @@
   <div class="text_underline" style="float: right;margin-top: 30px;">
     <%= link_to "Create New User", new_admin_user_path %>
   </div>
+<%#*<div class="text_underline" style="float: right;margin-top: 30px;">%>
+<%#= link_to "Generate PDF for Users Listing", generate_users_pdf_admin_users_path(:users => "true") %>
+<%#*</div>%>
   <br/>
   <h2 class="red_color">Listing Users</h2>
+  <br/>
+  <%= will_paginate(@users) %>
   <br/>
   <table style="border: 2px;width:100%;margin-bottom:25px">
     <tr>
@@ -11,29 +16,36 @@
       <th>Email</th>
       <th>Company</th>
       <th>Phone</th>
-      <th>Activate/Deactivate</th>
+      <th>Status</th>
       <th>Actions</th>
     </tr>
 
     <% @users.each do |user| %>
-      <%if current_user.present? && current_user.id != user.id%>
-        <tr>
-          <td><%= user.fname if user.fname%> <%= user.lname if user.lname%></td>
-          <td><%= user.email if user.email %></td>
-          <td><%= user.company if user.company%></td>
-          <td><%= user.phone if user.phone%></td>
-          <td>
-            <%if user.is_active == true%>
-              <%= link_to "active", status_admin_users_path(:user_id => user.id, :status => false)%>
-            <%else%>
-              <%= link_to "inactive", status_admin_users_path(:user_id => user.id, :status => true)%>
-            <%end%>
-          </td>
-          <td><%= link_to 'Show', admin_user_path(user) %> |
-            <%= link_to 'Edit', edit_admin_user_path(user) %> |
-            <%= link_to 'Destroy', admin_user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
+      <tr>
+        <td><%= user.fname if user.fname%> <%= user.lname if user.lname%></td>
+        <td><%= user.email if user.email %></td>
+        <td><%= user.company if user.company%></td>
+        <td><%= user.phone if user.phone%></td>
+        <td>
+          <%if user.is_active == true%>
+            Active
+          <%else%>
+            Inactive
+          <%end%>
+        </td>
+        <td><%= link_to 'Show', admin_user_path(user) %> |
+          <%= link_to 'Edit', edit_admin_user_path(user) %> |
+          <%= link_to 'Delete', admin_user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %> |
+          <%if user.is_active == true%>
+            <%= link_to "Deactivate", status_admin_users_path(:user_id => user.id, :status => false)%>
+          <%else%>
+            <%= link_to "Activate", status_admin_users_path(:user_id => user.id, :status => true)%>
+          <%end%>
+          <%if user.client%>
+            | <%= link_to "Client PDF", "/create_client?commit=Generate PDF&from_users=yes&user_id=#{user.id}" %>
+          <%end%>
+        </td>
+      </tr>
     <%end%>
   </table>
 </div>

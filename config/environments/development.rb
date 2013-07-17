@@ -40,16 +40,25 @@ Hippa::Application.configure do
   config.action_mailer.delivery_method = :smtp
   # change to true to allow email to be sent during development
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
+#  ActionMailer::Base.smtp_settings = {
+#    :address        => "smtp.gmail.com",
+#    :port           => 587,
+#    :domain         => 'popupstorz.com',
+#    :user_name => "test.account.rac@gmail.com",
+#    :password => "racpakistan22",
+#    #    :user_name => "meetings@tutorsprout.com",
+#    #    :password => "Tutorsprout!",
+#    :authentication => 'plain',
+#    :enable_starttls_auto => true
+#  }
   ActionMailer::Base.smtp_settings = {
-    :address        => "smtp.gmail.com",
-    :port           => 587,
-    :domain         => 'popupstorz.com',
-    :user_name => "test.account.rac@gmail.com",
-    :password => "racpakistan22",
-    #    :user_name => "meetings@tutorsprout.com",
-    #    :password => "Tutorsprout!",
+    :address        => "smtpout.secureserver.net",
+    :port           => 25,
+    :domain         => 'pogomd.com',
+    :user_name => "noreply@pogomd.com",
+    :password => "Pogopass",
     :authentication => 'plain',
     :enable_starttls_auto => true
   }

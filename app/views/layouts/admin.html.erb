@@ -99,6 +99,14 @@
       </div>
       <div id="righttop-header">
         <div id="top-social">
+          <ul>
+            <li>
+              <% if user_signed_in? %>
+                Welcome admin!
+                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+              <%end%>
+            </li>
+          </ul>
         </div>
         <div id="top-slogan">
           <h4 align="center"><span class="title-red">HIPAA
@@ -108,21 +116,33 @@
         </div>
         <div id="mainmenu">
           <ul id="menu">
-            <li class="current">
-              <a href="/admin/dashboard">Dashboard</a>
-            </li>
+            <% if current_page?(url_for(:controller => 'admin/dashboard', :action => 'index')) %>
+              <li class="current">
+                <a href="/admin/dashboard">Dashboard</a>
+              </li>
+            <%else%>
+              <li>
+                <a href="/admin/dashboard">Dashboard</a>
+              </li>
+            <%end%>
 
-            <li>
-              <a href="/users/edit">Change Password</a>
-            </li>
+            <%# if current_page?(url_for(:controller => 'registrations', :action => 'edit')) %>
+              <%#*<li class="current">%>
+                <%#*<a href="/users/edit">Change Password</a>%>
+              <%#*</li>%>
+            <%#else%>
+              <li>
+                <a href="/users/edit">Change Password</a>
+              </li>
+            <%#end%>
 
-            <li>
-              <%= link_to "Users", admin_users_path %>
-            </li>
-
-            <% if user_signed_in? %>
-              <li >
-                <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+            <% if current_page?(url_for(:controller => 'admin/users', :action => 'index')) %>
+              <li class="current">
+                <%= link_to "Users", admin_users_path %>
+              </li>
+            <%else%>
+              <li>
+                <%= link_to "Users", admin_users_path %>
               </li>
             <%end%>
           </ul>
@@ -151,7 +171,7 @@
       <div class="bottom-column1">
         <h5>Distributed by Acentec, Inc.</h5>
         <p>Acentec, Inc. is a turn-key provider of technology solutions to the medical community. We offer professional IT services to medical offices nationwide, medical billing services with Certified Coders out of our Florida office, PogoMD
-					Practice Portal, and Certified Medinformatix EMR and Practice Management software. Our best in class solutions are engineered to improve medical practice efficiency and performance. Our results oriented team is experienced, dedicated, and committed to assisting each practice in the achievement of their goals.</p>
+          Practice Portal, and Certified Medinformatix EMR and Practice Management software. Our best in class solutions are engineered to improve medical practice efficiency and performance. Our results oriented team is experienced, dedicated, and committed to assisting each practice in the achievement of their goals.</p>
         <p><a href="http://www.acentec.com">Acentec</a>, Inc. - <em><a href="http://www.acentec.com">Improving Medical Practice Performance</a></em><a href="http://www.acentec.com">®</a></p>
       </div>
       <div class="bottom-column2">

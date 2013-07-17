@@ -13,6 +13,7 @@ Hippa::Application.routes.draw do
     resources :users do
       collection do
         get 'status'
+        get 'generate_users_pdf'
       end
     end
   end

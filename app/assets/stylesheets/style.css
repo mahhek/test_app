@@ -810,13 +810,13 @@ a.button-helios:active span {
   float:left;
 }
 #top-social{
-  width:711px;
-  margin:13px 0px 25px 0px;
+ 
+  margin:13px 5px 25px 5px;
   float:right;
+  width: 100%;
 }
 #top-social ul li{
-  width:150px;
-  margin-right:2px;
+  margin-right:5px;
   display:inline-block;
   float:right;
 }
@@ -3308,18 +3308,20 @@ label{
 }
 .big_text_field
 {
-  height:30px;
+    border-radius: 10px 10px 10px 10px;
+    height: 32px;
+    padding-left: 3px;
 }
 
 .sign_in_box{
-  margin-left: 21.5%;border-radius:25px;;
+  margin-left: 21.5%;border-radius:15px;
   background-color: #F0F0F0;
   border: 2px;
   width:300px;
   padding: 50px;
 }
 .red_alert{
-  margin-left: 21.5%;border-radius:25px;;
+  margin-left: 21.5%;border-radius:15px;
   color:red;
 }
 .text_underline{text-decoration:underline;}
@@ -3333,10 +3335,10 @@ table, th
   color: #ac1927;border: 1px solid black;padding:10px
 }
 .box_users{
-  margin-left: 21.5%;border-radius:25px;;
+  margin-left: 21.5%;border-radius:15px;
   background-color: #F0F0F0;
   border: 2px;
-  width:57%;
+  width:60%;
   padding: 50px;
 }
 .float_left
@@ -3345,10 +3347,10 @@ table, th
   padding:10px;
 }
 .client_dashboard_box{
-  margin-left: 21.5%;border-radius:25px;;
+  margin-left: 21.5%;border-radius:15px;
   background-color: #F0F0F0;
   border: 2px;
-  width:40%;
+  width:41%;
   padding: 50px;
   height: auto;
   overflow: hidden;
@@ -3383,5 +3385,5 @@ table, th
   width: 163px;
 }
 .add-client_contact{
-  padding:10px;float:right;font-weight: bold;color:#AC1927; text-decoration: underline;width:100%
+  padding:10px;font-weight: bold;color:#AC1927; text-decoration: underline;width:100%;margin-left:-9px;
 }

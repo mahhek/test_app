@@ -4,8 +4,14 @@ class Admin::UsersController < ApplicationController
 
   def index
     #    @users = User.where(:is_active => true)
-    @users = User.all
+    @users = []
+    User.all.each do |user|
+      if current_user.present? && current_user.id != user.id
+        @users << user
+      end
+    end
 
+    @users = @users.paginate(:page => params[:page], :per_page => 20)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @users }
@@ -94,5 +100,69 @@ class Admin::UsersController < ApplicationController
     end
     
     redirect_to admin_users_path
+  end
+
+  def generate_users_pdf
+    if params[:users].present?
+      user_arr = []
+      users_arr = []
+      #      users << params[:users]
+
+      User.all.each do |user|
+        if current_user.present? && current_user.id != user.id
+          if user.fname.present?
+            user_arr << user.fname
+          else
+            user_arr << "None"
+          end
+          if user.email.present?
+            user_arr << user.email
+          else
+            user_arr << "None"
+          end
+          if user.company.present?
+            user_arr << user.company
+          else
+            user_arr << "None"
+          end
+          if user.is_active == true
+            user_arr << "active"
+          else
+            user_arr << "inactive"
+          end
+          users_arr << user_arr
+          user_arr = []
+        end
+      end
+
+      headers = []
+      headers << "Name"
+      headers << "Email"
+      headers << "Company"
+      headers << "Status"
+    end
+    if users_arr.present?
+      pdf = Prawn::Document.generate("Listing Users #{Date.today}.pdf",:page_layout => :landscape) do
+        move_down 10
+        text "Listing Users", :size => 15, :style => :bold
+        move_down 20
+        table(users_arr, :cell_style => {:width => 95},:border_style => :grid,:row_colors => ["FFFFFF", "DDDDDD"],:column_widths => {0 => 120,1 =>90,2 =>80,3 =>90},:headers => true,:headers => headers) do
+          cells.borders = [:bottom, :top, :left, :right]
+        end
+        move_down 10
+      end
+      
+      send_file pdf.path,
+        :content_type => "application/pdf",
+        :filename => "Listing Users #{Date.today}.pdf"
+    else
+      pdf = Prawn::Document.generate("Listing Users #{Date.today}.pdf",:page_layout => :landscape) do
+        move_down 10
+        text "No user found.", :size => 10
+      end
+      send_file pdf.path,
+        :content_type => "application/pdf",
+        :filename => "Listing Users #{Date.today}.pdf"
+    end
   end
 end

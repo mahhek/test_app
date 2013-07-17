@@ -4,7 +4,6 @@
     <% if @user.errors.any? %>
       <div id="error_explanation" class="red_color">
         <h2 class="red_color"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
         <ul>
           <% @user.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
@@ -14,32 +13,34 @@
     <% end %>
 
     <div>
-      First Name : <br/>
+      First Name: * <br/>
       <%= f.text_field :fname , :class => "big_text_field", :presence => true%>
     </div>
     <br/>
     <div>
-      Last Name : <br/>
+      Last Name: * <br/>
       <%= f.text_field :lname , :class => "big_text_field"%>
     </div>
     <br/>
     <div>
-      Company : <br/>
+      Company: <br/>
       <%= f.text_field :company , :class => "big_text_field"%>
     </div>
     <br/>
     <div>
-      Phone : <br/>
-      <%= f.text_field :phone , :class => "big_text_field"%>
-    </div>
+        Phone: <br/>
+        <%= f.text_field :phone , :class => "big_text_field"%>
+        <br/>
+        <i>Ex: 111-222-3456</i>
+      </div>
     <br/>
     <div>
-      Email : <br/>
+     Email: * <br/>
       <%= f.email_field :email, :autofocus => true , :class => "big_text_field"%>
     </div>
     <br/>
     <div>
-      Password : <br/>
+      Password: * <br/>
       <%= f.password_field :password , :class => "big_text_field"%>
     </div>
 

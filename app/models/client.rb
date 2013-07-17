@@ -6,9 +6,10 @@ class Client < ActiveRecord::Base
   belongs_to :user
   accepts_nested_attributes_for :client_contacts, allow_destroy: true
   accepts_nested_attributes_for :client_interfaces, allow_destroy: true
-  validates_presence_of :hss_partner, :client_name
-  validates_format_of :contact_phone, :allow_blank => true,
-    :with => /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}*/
+  validates :hss_partner, :presence => { :message => "can't be blank" }
+  validates :client_name, :presence => { :message => "can't be blank" }
+  validates :contact_phone, :format => { :with => /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/ }, :allow_blank => true
+  validates :iso_telephone, :format => { :with => /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/ }, :allow_blank => true
   validates_format_of :zip_code, :allow_blank => true,
     :with => /^\d{5}$|^\d{5}-\d{4}$*/
   validates_format_of :covered_entity_zip_code, :allow_blank => true,
